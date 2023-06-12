@@ -1,8 +1,17 @@
 const fs = require('fs');
+const util = require('util');
 
 class Reader {
-   Read (filepath) {
-      return fs.readFileSync(filepath, 'utf-8')
+   constructor() {
+      this.reader = util.promisify(fs.readFile); // turns readFile into a Promise
+   }
+
+   async Read (filepath) {
+      try {
+         return await this.reader(filepath, 'utf-8');
+      } catch (err) {
+         return undefined;
+      }
    }
 }
 
