@@ -1,0 +1,25 @@
+{
+  
+  "name": "excel-reader",
+  "version": "1.0.0",
+  "description": "a simple application to read excel files",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "www.github.com/ribeiro-dev/excel-reader"
+  },
+  "keywords": [
+    "excel",
+    "node",
+    "file"
+  ],
+  "author": "ribeiro-dev",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
+}
