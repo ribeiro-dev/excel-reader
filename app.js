@@ -1,8 +1,8 @@
-const Reader = require('./Reader');
-const Processor = require('./Processor');
-const Table = require('./Table');
-const HtmlParser = require('./HtmlParser');
-const Writer = require('./Writer');
+const Reader = require('./classes/Reader');
+const Processor = require('./classes/Processor');
+const Table = require('./classes/Table');
+const HtmlParser = require('./classes/HtmlParser');
+const Writer = require('./classes/Writer');
 
 const reader = new Reader();
 const writer = new Writer();
